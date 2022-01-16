@@ -1,0 +1,15 @@
+{% extends "flatpages/default.html" %}
+
+{% block activ %}
+<li class="nav-item"><a class="nav-link" href="/page1/">Page 1</a></li>
+<li class="nav-item"><a class="nav-link" href="/page2/">Page 2</a></li>
+<li class="nav-item"><a class="nav-link  active" aria-current="page" href="/page3/">Page 3</a></li>
+{% endblock activ %}
+
+{% block content %}
+<hr>
+<h1>{{ flatpage.title }}</h1>
+<br>
+{{ flatpage.content }}
+<hr>
+{% endblock content%}
